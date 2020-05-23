@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 
 @Component
-@PropertySource("classpath*:application.yml")
+@PropertySource("classpath:application.yml")
 public class DataSourceConfiguration {
 
     @Value("${spring.datasource.hikari.jdbc-url}")
